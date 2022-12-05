@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+
+      /*
+      Write two temperature conversion functions:
+      1. The cToF function will convert degrees Celsius
+      to Fahrenheit by the formula:
+      fahrenheit = celsius * 9 / 5 + 32
+      2. The fToC function converts Fahrenheit to
+      Celsius from the formula:
+      celsius = (fahrenheit - 32) * 5 / 9;
+      3. In addition, show the conversion result in the console, e.g.:
+      "20 degrees Celsius is 68 degrees Fahrenheit", etc
+      Use a special degree sign in the string if you want
+      with /xB0
+      4. Convert 20C to Fah. (68F)
+         Convert 86F to Fah. (30C)
+      */
+
+      function cToF(celsius) {
+          let fahrenheit = celsius * 9 / 5 + 32;
+          console.log(celsius + "stopni Celsjusza to" + fahrenheit + " stopni Fahrenheita");
+          return fahrenheit;
+      }
+
+      function fToC(fahrenheit) {
+          let celsius = (fahrenheit - 32) * 5 / 9;
+          console.log(fahrenheit + "\xB0 fahrenheit to" + celsius + "\xB0 Celsjusza";)
+          return celsius;
+      }
+
+      let f = cToF(20);
+      let c = fToC(86);5
+    </script>
+  </body>
+</html>

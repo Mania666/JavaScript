@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const company = {
+        name: "example ltd",
+        street: " Wilcza",
+        city: " Warsaw",
+        employees: [],
+      };
+
+      function addEmployee(name, email, job) {
+        const employee = {
+          username: name,
+          email: email,
+          job: job,
+        };
+
+        company.employees.push(employee);
+      }
+
+      addEmployee("Asia", "asia@example.com", "programmer");
+
+      console.log(company);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let soldCars = 1200;
+      let carPrice = 90000;
+      let revenue = soldCars * carPrice; // Revenue
+      console.log("Factory revenue:", revenue);
+
+      let factoryCosts = revenue * 0.65;
+      console.log("Factory production costs:", factoryCosts);
+
+      let marketingCost = revenue * 0.1;
+      console.log("marketing costs:", marketingCost);
+
+      let income = revenue - factoryCosts - marketingCost;
+      console.log("Factory income:", income);
+
+      let incomeTax = income * 0.19;
+      console.log("Tax", incomeTax);
+
+      let incomeAfterTax = income - incomeTax; // tax
+      console.log("Profit after tax:", incomeAfterTax);
+
+      let incomePerShare = incoeAfterTax / 30000;
+      console.log("Earnings per share:", incomePerShare);
+    </script>
+  </body>
+</html>

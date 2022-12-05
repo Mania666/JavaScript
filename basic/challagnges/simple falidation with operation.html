@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let article = {
+        title: "Hello World",
+        content: "This is my first post",
+        tags: ["blog", "lifestyle"],
+        version: 1,
+      };
+
+      function validateArticle(art) {
+        if ("title" in art === false || typeof art.title !== "string") {
+          console.log("Invalid title in article");
+          return false;
+        }
+
+        if (!"content" in art || typeof art.content !== "string") {
+          console.log("Invalid title in content");
+          return false;
+        }
+
+        if (!"tags" in art || !Array.isArray(art.tags)) {
+          console.log("Invalid table tags");
+          return false;
+        }
+
+        if (!"version" in art || typeof art.version !== "number") {
+          console.log("Problem with the version of the article");
+          return false;
+        }
+
+        if (art.version <= 0) {
+          console.log("Wrong version of the article");
+          return false;
+        }
+
+        return true;
+      }
+    </script>
+  </body>
+</html>

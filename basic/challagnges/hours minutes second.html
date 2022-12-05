@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+Create time conversion functions:
+1. convertToSeconds taking the number of hours
+and minutes and returns the number of seconds.
+As function parameters write: hours, minutes.
+Convert 3 hours and 25 minutes to seconds,
+show result in console.
+2. convertToHours accepting the minutes parameter
+and returning the number of hours.
+Convert 120 minutes to hours and show
+result in the console.
+*/
+
+      function convertToSeconds(hours, minutes) {
+        return minutes * 60 + hours * 60 * 60;
+      }
+
+      function convertToHours(minutes) {
+        return minutes / 60;
+      }
+
+      let seconds = convertToSeconds(3, 25);
+      console.log("num seconds:" + seconds);
+
+      let hours = convertToHours(120);
+      console.log("num hours: " + hours);
+    </script>
+  </body>
+</html>

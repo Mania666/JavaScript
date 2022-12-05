@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+
+      function getUserDescription(name, city, country) {
+           const firstSign = name[0];
+           const nameLenght = name.lenght;
+           const lastSign = name[ nameLenght - 1];
+
+
+           return 'Użytkownik o imieniu' ${name} 'mieszka w mieście' ${city}
+           'w Państwie:' ${country}
+           'Pierwszy znam imienia to:' ${firstSign} 'natomiast ostatni to:' ${lastSign}
+           'Imię ma' ${nameLenght} 'znaków'.
+            ;
+      }
+          const user1 = getUserDescription("Kasia", "Kraków", "UK");
+          console.log(user1);
+
+          const user2 = getUserDescription("Adam", "Londyn", "UK");
+          console.log(user2);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+
+      /*
+      1. Create a numbers variable with the values ​​in the array from 1 to 6.
+      Use a while loop in which you will go through the array from the beginning,
+       multiply each value taken from the table twice
+      and display in the console.
+      2. Add the names variable as an array of names: Ania, Ola, Kasia,
+      Olrk and Raphael. Then print the names from start to finish in a for loop.
+      Then display the names again, but this time backwards
+      also in a for loop.
+      */
+
+      let numbers = [1, 2, 3, 4, 5, 6];
+      let i = 0;
+      while ( i < numbers.length) {
+             console.log( numbers[i] * 2);
+             i ++
+
+      }
+
+      let names = ["Anna, Ola, Kasia, Olrk, Raphael"];
+      for (let j = 0; j < names.length; >= 0; j++) {
+          console.log( names [j] );
+
+      }
+
+      for (let j = names.length -1; j >= 0; j--) {
+          let el = names[j];
+          console.log(el);
+      }
+    </script>
+  </body>
+</html>

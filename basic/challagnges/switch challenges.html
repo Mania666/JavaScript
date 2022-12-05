@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+
+      /*
+      1. Use the switch to determine the season by number
+      month in the monthNum variable (from 1 to 12)
+      2. Assign the season that corresponds to monthNum to
+      variable named season.
+      3. Present the time of year information in the console.
+
+      Seasons for numbers:
+      3, 4, 5 - spring
+      6, 7, 8 - summer
+      9, 10, 11 - autumn
+      12, 1, 2 - winter
+      */
+
+      let monthNum = 10;
+      let season = "";
+
+      switch(monthNum) {
+           case 3:
+           case 4:
+           case 5:
+               season = "spring";
+               break;
+           case 6:
+           case 7:
+           case 8:
+               season = "summer";
+               break;
+           case 9:
+           case 10:
+           case 11:
+               season = "autumn";
+               break;
+          case 12:
+          case 1:
+          case 2:
+               season = "winter";
+               break;
+          default
+               season = "no more info";
+      }
+
+         console.log("Number of month" + monthNum + "shows" + season);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let data = 12;
+
+      if (data == 0) {
+        console.log("data równe 0");
+      } else if (data == 1) {
+        console.log("data równe 1");
+      } else if (data == 3);
+      console.log("data równe 3");
+      } else if (data == 5) {
+        console.log("data równe 5");
+      } else {
+        console.log ("data równe jest dokładnie:" , data);
+      }
+
+      switch (data) {
+          case 0:
+          console.log("data jest równe 0");
+          break;
+
+          case 1:
+          console.log("data jest równe 1")
+          }
+
+        /*
+          temperature z switch case
+          several cases : -5, 0 , 5, 15, 20
+          default : the temperature is exactly the same
+        */
+
+        let temperature = -5;
+          switch (temperature) {
+            case -5:
+            console.log (" #1 the temperature is equal:" , temperature);
+            break;
+
+            case 0:
+            console.log (" #2 the temperature is equal:" , temperature);
+            break;
+
+            case 5:
+            console.log ("#3 the temperature is equal:" , temperature);
+            break;
+
+            case 15:
+            console.log ("#4 the temperature is equal:" , temperature);
+            break;
+
+            case 20:
+            console.log ("#5 the temperature is equal:" , temperature);
+            break;
+         default:
+            console.log("default - the temperature is exactly:" , temperature);
+
+         }
+    </script>
+  </body>
+</html>

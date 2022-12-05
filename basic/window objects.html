@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      window.addEventListener("online", function (event) {
+        console.log("online: accessing the internet");
+      });
+
+      window.ononline = function (event) {
+        console.log("ononline: accessing the internet");
+      };
+
+      window.addEventListener("offline", function (event) {
+        console.log("offline: loss of internet access");
+      });
+
+      window.onoffline = function (event) {
+        console.log("onoffline: loss of internet access");
+      };
+
+      // focus
+      window.addEventListener("focus", function (event) {
+        console.log("focus: uzyskanie focus");
+      });
+
+      window.onfocus = function (event) {
+        console.log("onfocus: uzyskanie focus okna");
+      };
+      // blur - utrata focus okna
+
+      window.addEventListener("blur", function (event) {
+        console.log("blur: utrata focus");
+      });
+
+      window.onblur = function (event) {
+        console.log("onblur: utrata focus");
+      };
+
+      window.addEventListener("rezise", function (event) {
+        console.log("resize:", innerWidth, innerHeight);
+      });
+
+      // onload
+
+      window.onload = function (event) {
+        console.log("onblur: start strony");
+      };
+    </script>
+  </body>
+</html>

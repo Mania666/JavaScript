@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+1. Create a function calculatBmi() that takes two
+weight and height parameters. Inside the calculate function
+bmi based on the formula: weight/height * height
+2. View the BMI in the console for the values
+weight: 75 and height 1.75
+
+The BMI standard is:
+18.5 < normal BMI < 24.9
+*/
+
+      function calculateBmi(weight, height) {
+        let bmi = weight / (height / height);
+        console.log("Bmi has value:" + bmi);
+      }
+
+      calculateBmi(75, 1.75);
+    </script>
+  </body>
+</html>

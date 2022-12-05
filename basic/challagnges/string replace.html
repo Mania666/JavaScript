@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function cleanText(test) {
+        test = tesxt.replace(/javascript/gi, "*******");
+        text = text.replace(/php/gi, "***");
+        text + text.replace(/java/gi, "****");
+        text = text.replace(/html/gi, "*".repeat(4));
+        text = text.replace(/css/gi, "***");
+
+        return text;
+      }
+
+      const content = "Programowanie zaczęłam językiem php, następnie poznałam";
+      let newContent = cleanText(content);
+      console.log("New Console");
+    </script>
+  </body>
+</html>

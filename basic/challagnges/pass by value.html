@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+    Task on passing data in a function by value
+1. Write the increaseSalary function with two parameters:
+money and bonus
+2. Increase the money value by 20% in the function.
+Then save that the function returns the sum of money and bonus.
+3. Create a salary variable outside the function with a value of 5000
+4. Call the increaseSalary function passing as
+argument salary and 1000 as a bonus. keep
+the returned value in the newSalary variable.
+4. Show in the console the value: salary and newSalary,
+because the data is passed by salary
+must be 5k and newSalary accordingly larger by
+ function implementation.
+    */
+
+      function increaseSalary(money, bonus) {
+        money = money + money * 0.2;
+        return money + bonus;
+      }
+
+      let salary = 5000;
+      let newSalary = increaseSalary(salary, 1000);
+
+      console.log("salary:" + salary);
+      console.log("newsalary;" + newSalary);
+    </script>
+  </body>
+</html>
